@@ -1,3 +1,6 @@
 server:
   port: 9191
 
+service:
+  greeting: this is from profile service
+
