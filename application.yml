@@ -1,0 +1,12 @@
+
+## default datasource configuaration
+spring:
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/acres_11_11
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
