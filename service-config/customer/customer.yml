@@ -1,15 +1,6 @@
 server:
   port: 0
 
-spring:
-  cloud:
-    config:
-      uri: http://localhost:8191
-      discovery:
-        enabled: true
-  profiles:
-    active: default
-
 eureka:
   client:
     serviceUrl:
@@ -20,5 +11,4 @@ eureka:
   instance:
     instance-id: ${spring.application.name}-${random.int}
     hostname: ${spring.application.name}
-    appname: ${spring.application.name}
     prefer-ip-address: true
